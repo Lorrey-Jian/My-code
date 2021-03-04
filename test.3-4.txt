@@ -1,0 +1,20 @@
+#include  <stdio.h>
+int main()
+{
+	int a,b,c,d;
+	printf("输入被除数:");
+	scanf("%d",&a);
+	
+	printf("输入除数:");
+	scanf("%d",&b);
+	
+//计算商
+    c=a/b;
+//计算余数
+    d=a%b;
+	
+	printf("商=%d\n",c);
+	printf("余数=%d\n",d);
+	
+	return 0;	
+}
