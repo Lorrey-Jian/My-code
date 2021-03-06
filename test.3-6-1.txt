@@ -1,0 +1,41 @@
+#include <stdio.h>
+struct Book
+{
+	char name[20];//C语言程序设计
+	short price;//55
+};
+int main()
+{
+	struct Book b1 = { "C语言程序设计", 55 };
+	printf("书名:%s\n", b1.name);
+	printf("价格:%d\n", b1.price);
+	b1.price = 15;
+	printf("修改后的价格:%d\n", b1.price);
+	return 0;
+}
+
+
+
+//利用pb打印出书名和价格
+//(结构体变量.成员)
+#include <stdio.h>
+int main()
+{
+	struct Book b1 = { "C语言程序设计", 55 };
+	struct Book *pb = &b1;
+
+	printf("%s\n", (*pb).name);
+    printf("%d\n", (*pb).price);
+}
+
+
+//(结构体指针→成员)
+#include <stdio.h>
+int main()
+{
+	struct Book b1 = { "C语言程序设计", 55 };
+	struct Book *pb = &b1;
+
+	printf("%s\n", pb→name);
+	printf("%d\n", pb→price);
+}
