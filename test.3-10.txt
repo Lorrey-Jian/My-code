@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+	char i='a', b;
+	for (; i <= 'z'; i++)
+	{
+		printf(" %c", i);
+		b = i - 32;
+		printf("转换后的字母为: %c,%d\n", b, b);
+    	                getchar();
+	}
+	return 0;
+}
