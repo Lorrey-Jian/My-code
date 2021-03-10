@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+	int ch = 0; 
+	printf("请输入0-9的密码:\n", ch);
+	/*scanf("%s", ch);
+	getchar();*/
+	while ((ch = getchar()) != EOF)
+	{
+		if (ch<'0' || ch>'9')
+			continue;
+		putchar(ch);
+	}	
+	
+	return 0;
+}
